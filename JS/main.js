@@ -1,5 +1,5 @@
 // <!-- ======================== ABOUT FLEX CARDS ======================== -->
-$(".option").click(function(){
-  $(".option").removeClass("active");
+$(".flex__card").click(function(){
+  $(".flex__card").removeClass("active");
   $(this).addClass("active");
 });
