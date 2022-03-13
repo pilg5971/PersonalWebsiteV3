@@ -218,14 +218,18 @@ h1 {
 
 /* <!-- ======================== REUSABLE CODE ======================== --> */
 .section {
-  padding: 30px;
+  padding: 30px 0;
 	text-align: center;
   min-height: 100vh;
   color: var(--primary-color);
 }
 
+.section__title{
+  font-size: 50px;
+}
+
 .section__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 	max-width: 600px;
 	margin: auto;
@@ -236,58 +240,98 @@ h1 {
   background-color: var(--section-cream);
 }
 
-.profile__card {
+#profile__gradient,
+#profile__gradient:after,
+#profile__card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+}
+
+/* Profile Card */
+#profile__gradient {
+  background: #999955;
+  background-image: linear-gradient(#f9f5d4 20%, #e4deae 20%, #e4deae 40%, #b7bf96 40%, #b7bf96 60%, #133a1b 60%, #133a1b 80%, #011b10 80%);
+  margin: 0 auto;
+  margin-top: 112px;
+  width: 100%;
+  height: 150px;
+}
+
+#profile__gradient:after {
+  content: "";
+  position: absolute;
+  background: #E9E2D0;
+  left: 50%;
+  margin-top: -67.5px;
+  padding-left: 20px;
+  border-radius: 11px;
+  width: 520px;
+  height: 275px;
+  transform: translate(-50%);
+}
+
+#profile__card {
+  position: absolute;
+  width: 490px;
+  border-radius: 6px;
+  height: 225px;
+  padding: 25px;
+  left: 50%;
+  top: calc(50% - 140px + 98vh);
+  background: #f9f5d4;
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
+  transform: translate(-50%);
   display: flex;
   flex-direction: row;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  background-color: white;
-  text-align: left;
-  padding: 2rem;
-  margin: 40px auto 0 auto;
-  max-width: 1040px;
+  justify-content: space-evenly;
 }
 
-.profile__img {
-  margin-right: 2rem;
+#profile__card img {
+  width: 175px;
+  height: 175px;
+  float: left;
+  border-radius: 100px;
+  margin-right: 20px;
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  filter: sepia(1);
+  object-fit: cover;
+  object-position: 50% 25%;
 }
 
-.profile__text {
-
+.profile__content{
+  width: 50%;
 }
 
-.profile__quote {
-  margin-bottom: 1rem;
+#profile__card h2 {
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15pt;
 }
 
-.profile__info {
-  font-weight: 500;
-}
-
-.profile__name {
-  color: skyblue;
-}
-
-.profile__job {
-  color: darkslategray;
+#profile__card p {
+  color: #555;
+  font-size: 13px;
 }
 
 /* < - - - Campfire Knight - - - > */
 .campfire {
+  /* Original Color */
   /* background: #5f6171; */
+
+  /* New Color */
   background: var(--section-cream);
 }
 .campfire::after, .campfire::before {
   display: block;
   content: '';
   width: 4px;
-  height: 5px;
+  height: 4px;
   position: absolute;
-  /* left: -491px; */
-  /* left: 29%; */
-  /* right: 0; */
-  top: calc(50% - 140px + 100vh);
-  /* transform: translateY(-50%); */
+  left: -553px;
+  right: 0;
+  top: calc(50% - 140px + 131vh);
   margin: auto;
 }
 .campfire::after {
