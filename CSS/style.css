@@ -199,7 +199,7 @@ h1 {
   font-weight: 400;
 }
 
-/* <!-- ======================== BUTTON ======================== --> */
+/* < - - - Call To Action Button - - - > */
 .btn {
 	display: inline-block;
 	padding: 10px 30px;
@@ -240,14 +240,14 @@ h1 {
   background-color: var(--section-cream);
 }
 
-#profile__gradient,
-#profile__gradient:after,
-#profile__card{
+/* < - - - Profile Card - - - > */
+.profile__gradient,
+.profile__gradient:after,
+.profile__card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
 }
 
-/* Profile Card */
-#profile__gradient {
+.profile__gradient {
   background: #999955;
   background-image: linear-gradient(#f9f5d4 20%, #e4deae 20%, #e4deae 40%, #b7bf96 40%, #b7bf96 60%, #133a1b 60%, #133a1b 80%, #011b10 80%);
   margin: 0 auto;
@@ -256,7 +256,7 @@ h1 {
   height: 150px;
 }
 
-#profile__gradient:after {
+.profile__gradient:after {
   content: "";
   position: absolute;
   background: #E9E2D0;
@@ -269,7 +269,7 @@ h1 {
   transform: translate(-50%);
 }
 
-#profile__card {
+.profile__card {
   position: absolute;
   width: 490px;
   border-radius: 6px;
@@ -286,7 +286,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-#profile__card img {
+.profile__card img {
   width: 175px;
   height: 175px;
   float: left;
@@ -303,14 +303,18 @@ h1 {
   width: 50%;
 }
 
-#profile__card h2 {
+.profile__card h2 {
   color: #333;
   margin: 0 auto;
   padding: 0;
   font-size: 15pt;
 }
 
-#profile__card p {
+.profile__info{
+  list-style: none;
+}
+
+.profile__topic {
   color: #555;
   font-size: 13px;
 }
