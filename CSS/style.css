@@ -252,7 +252,12 @@ h1 {
 
 .profile__gradient {
   background: #999955;
-  background-image: linear-gradient(#f9f5d4 20%, #e4deae 20%, #e4deae 40%, #b7bf96 40%, #b7bf96 60%, #133a1b 60%, #133a1b 80%, #011b10 80%);
+  background-image: linear-gradient(
+    #f9f5d4 20%, 
+    #e4deae 20%, #e4deae 40%, 
+    #b7bf96 40%, #b7bf96 60%, 
+    #133a1b 60%, #133a1b 80%, 
+    #011b10 80%);
   margin: 0 auto;
   margin-top: 112px;
   width: 100%;
@@ -565,7 +570,7 @@ h1 {
 }
 /* <!-- ======================== PORTFOLIO ======================== --> */
 /* Card Grid */
-.band {
+.project__cards__container {
   width: 90%;
   max-width: 1240px;
   padding: 50px 0;
@@ -576,17 +581,17 @@ h1 {
   grid-gap: 20px;
 }
 @media (min-width: 30em) {
-  .band {
+  .project__cards__container {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 60em) {
-  .band {
+  .project__cards__container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.card {
+.project__card {
   background: white;
   text-decoration: none;
   color: #444;
@@ -598,27 +603,27 @@ h1 {
   top: 0;
   transition: all 0.1s ease-in;
 }
-.card:hover {
+.project__card:hover {
   top: -2px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
-.card article {
+.project__card article {
   padding: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.card h1 {
+.project__card h1 {
   font-size: 20px;
   margin: 0;
   color: #333;
 }
-.card p {
+.project__card p {
   flex: 1;
   line-height: 1.4;
 }
-.card span {
+.project__card span {
   font-size: 12px;
   font-weight: bold;
   color: #999;
@@ -626,17 +631,17 @@ h1 {
   letter-spacing: 0.05em;
   margin: 2em 0 0 0;
 }
-.card .thumb {
+.project__card .thumb {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
 }
 
 @media (min-width: 60em) {
-  .item-1 {
+  .large__card {
     grid-column: 1/span 2;
   }
-  .item-1 h1 {
+  .large__card h1 {
     font-size: 24px;
   }
 }
