@@ -328,10 +328,6 @@ h1 {
 
 /* < - - - Campfire Knight - - - > */
 .campfire {
-  /* Original Color */
-  /* background: #5f6171; */
-
-  /* New Color */
   background: var(--section-cream);
 }
 .campfire::after, .campfire::before {
