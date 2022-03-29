@@ -1,0 +1,190 @@
+/* < - - - Expanding Flex Cards - - - > */
+.flex__cards__container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+  margin: 40px auto 0px auto;
+  padding: 10px;
+}
+
+.flex__cards__container .flex__card {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid var(--border-gray);
+}
+
+.flex__cards__container .flex__card:nth-child(1) {
+  --defaultBackground: #ed5565;
+}
+.flex__cards__container .flex__card:nth-child(2) {
+  --defaultBackground: #fc6e51;
+}
+.flex__cards__container .flex__card:nth-child(3) {
+  --defaultBackground: #ffce54;
+}
+.flex__cards__container .flex__card:nth-child(4) {
+  --defaultBackground: #2ecc71;
+}
+.flex__cards__container .flex__card:nth-child(5) {
+  --defaultBackground: #5d9cec;
+}
+.flex__cards__container .flex__card:nth-child(6) {
+  --defaultBackground: #ac92ec;
+}
+
+.flex__cards__container .flex__card.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+
+.flex__cards__container .flex__card.active .shadow {
+  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.flex__cards__container .flex__card.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.flex__cards__container .flex__card.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+
+.flex__cards__container .flex__card.active .label .icon i {
+  font-size: 24px;
+}
+
+.flex__cards__container .flex__card:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+
+.flex__cards__container .flex__card:not(.active) .shadow {
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+.flex__cards__container .flex__card:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.flex__cards__container .flex__card:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+
+.flex__cards__container .flex__card:not(.active) .label .icon i {
+  font-size: 20px;
+}
+
+.flex__cards__container .flex__card .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.flex__cards__container .flex__card .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.flex__cards__container .flex__card .label .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+
+.flex__cards__container .flex__card .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+
+.flex__cards__container .flex__card .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.flex__cards__container .flex__card .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.flex__cards__container .flex__card .label .info .sub {
+  transition-delay: 0.1s;
+}
+
+
+/* < - - - Media Breakpoints - - - > */
+/* Stack Cards */
+@media (max-width: 768px){
+  .flex__cards__container{
+    flex-direction: column;
+  }
+  .flex__cards__container .flex__card{
+    min-height: 60px;
+    background-size: auto;
+  }
+  .flex__cards__container .flex__card.active{
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .flex__cards__container {
+    min-width: 520px;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .flex__cards__container {
+    min-width: 440px;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .flex__cards__container {
+    min-width: 360px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .flex__cards__container {
+    min-width: 280px;
+  }
+}
