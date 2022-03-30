@@ -25,7 +25,25 @@
     
     <!-- ======================== NAVIGATION ======================== -->
     <header>
-      <nav></nav>
+
+      <!-- Desktop Navigation -->
+      <nav id="dot-nav">
+        <ul>
+          <li class="dot-container"><a href="#home">
+            <span class="dot"></span><span class="dot-label">Home</span></a></li>
+          <li class="dot-container"><a href="#about">
+            <span class="dot"></span><span class="dot-label">About</span></a></li>
+          <li class="dot-container"><a href="#skills">
+            <span class="dot"></span><span class="dot-label">Skills</span></a></li>
+          <li class="dot-container"><a href="#portfolio">
+            <span class="dot"></span><span class="dot-label">Portfolio</span></a></li>
+          <li class="dot-container"><a href="#contact">
+            <span class="dot"></span><span class="dot-label">Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation -->
+
     </header>
 
     <!-- ======================== SIDE PANELS ======================== -->
@@ -118,21 +136,17 @@
                 are crucial within my design philosophy, alongside my viewpoint 
                 in taking extra time to produce nothing but my best work.
               </p>
-              <!-- <p>
-                Currently, I work as a Software Consultant at 
-                <a href="https://fishbowlsolutions.com/" target="_blank">
-                  <mark>Fishbowl Solutions</mark></a> 
-                in St. Louis Park, Minnesota. I graduated with my Bachelor's Degree 
-                in Computer Science from 
-                <a href="https://www.stthomas.edu/" target="_blank">
-                  <mark>The University of St. Thomas</mark></a> 
-                in 2021, and previously interned at 
-                <a href="https://www.quadplus.com/" target="_blank">
-                <mark>Quad Plus LLC</mark></a> and 
-                <a href="https://srswebsolutions.com/" target="_blank">
-                  <mark>SRS Web Solutions</mark></a>. 
-              </p> -->
-              
+              <p style="margin-top: 40px;">
+                Here are a few technologies I’ve been working with recently:
+              </p>
+              <ul class="profile__hobbies">
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Svelte</li>
+                <li>Node.js</li>
+                <li>Wordpress</li>
+              </ul>
             </div>
     
             <figure class="profile__content">
@@ -171,30 +185,30 @@
           <div class="skill__cards__container">
             <div class="skill__card">
               <img src="" alt="Frontend Development">
-              <span>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ex, repudiandae repellat. 
-                Magni minus labore quibusdam maiores iste, 
-                deleniti illo, officia exercitationem vitae 
-                repellendus provident corporis hic eius nisi 
-                nobis cum.</span>
+              <h2>Frontend Development</h2>
+              <span>Using HTML, CSS, and JavaScript with 
+                pre-processors and build tools such as Sass 
+                and Grunt, I have a passion for developing 
+                pixel-perfect websites and apps while maintaining 
+                a semantic, modular, and DRY code base.</span>
             </div>
             <div class="skill__card">
               <img src="" alt="UI/UX Design">
-              <span>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ex, repudiandae repellat. 
-                Magni minus labore quibusdam maiores iste, 
-                deleniti illo, officia exercitationem vitae 
-                repellendus provident corporis hic eius nisi 
-                nobis cum.</span>
+              <h2>UI/UX Design</h2>
+              <span>"A user interface is like a joke. If you have 
+                to explain it, it's not that good." I strive to 
+                develop and implement responsive and aesthetically 
+                pleasing interfaces for websites and apps that adapt 
+                to any type of device, platform, or browser.</span>
             </div>
             <div class="skill__card">
               <img src="" alt="Graphic Design">
-              <span>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ex, repudiandae repellat. 
-                Magni minus labore quibusdam maiores iste, 
-                deleniti illo, officia exercitationem vitae 
-                repellendus provident corporis hic eius nisi 
-                nobis cum.</span>
+              <h2>Graphic Design</h2>
+              <span>There have been far too many times where I've been 
+                trying to accomplish a simple task on a website, and 
+                ended up wanting to throw my computer out the window in 
+                frustration. Needless to say, user experience is an aspect 
+                of software I believe is vital to a successful product.</span>
             </div>
           </div>
 
@@ -202,67 +216,144 @@
 
         <div class="slider">
           <div class="slide-track">
+
+            <!-- Loop #1 -->
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="Html">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="Css">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                alt="Vue.js">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+                alt="Svelte">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                alt="Angular">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="Tailwind">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt="Sass">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+              <img 
+                src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                alt="Figma">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+              <img 
+                src="https://www.vectorlogo.zone/logos/inkscape/inkscape-icon.svg"
+                alt="Inkscape">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+              <img 
+                src="https://www.vectorlogo.zone/logos/gimp/gimp-icon.svg"
+                alt="Gimp 2">
+            </div>
+
+            <!-- Loop #2 -->
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="Html">
             </div>
             <div class="slide">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="Css">
             </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                alt="Vue.js">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+                alt="Svelte">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                alt="Angular">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="Tailwind">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt="Sass">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                alt="Figma">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://www.vectorlogo.zone/logos/inkscape/inkscape-icon.svg"
+                alt="Inkscape">
+            </div>
+            <div class="slide">
+              <img 
+                src="https://www.vectorlogo.zone/logos/gimp/gimp-icon.svg"
+                alt="Gimp 2">
+            </div>
+
           </div>
         </div>
 
-        <!-- <div class="skill__carousel">
-          <img src="" alt="Html">
-          <img src="" alt="Css">
-          <img src="" alt="JavaScript">
-          <img src="" alt="React">
-          <img src="" alt="Vue.js">
-          <img src="" alt="Svelte">
-          <img src="" alt="Angular">
-          <img src="" alt="Bootstrap">
-          <img src="" alt="Tailwind">
-          <img src="" alt="Sass">
-          <img src="" alt="Figma">
-          <img src="" alt="Inkscape">
-          <img src="" alt="Gimp 2">
-        </div> -->
-        
       </section>
 
       <!-- ======================== PORTFOLIO ======================== -->
