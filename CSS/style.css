@@ -448,15 +448,16 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 .skill__card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1rem;
   border-radius: 11px;
   background-color: #b7bf96;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .skill__carousel {
