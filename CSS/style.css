@@ -267,7 +267,7 @@ a.is-selected .dot{
   color: var(--primary-color);
  
   /* Temporary Divider */
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
 }
 
 .section__content{
@@ -741,6 +741,8 @@ a.is-selected .dot{
 .project__card p {
   flex: 1;
   line-height: 1.4;
+  padding: 10px 0 0 0;
+  font-size: 12px;
 }
 
 .project__card span {
@@ -786,6 +788,22 @@ a.is-selected .dot{
 #contact {
   background-color: var(--primary-color);
   color: white;
+  height: 75vh;
+}
+
+.contact__description {
+  margin: 0 auto;
+  max-width: 440px;
+  font-size: 1.2em;
+}
+
+#contact-form {
+  margin: auto;
+}
+
+#form-inputs {
+  display: flex;
+  margin: 15px 0;
 }
 
 /* <===============================================================> */
@@ -795,6 +813,7 @@ a.is-selected .dot{
 #footer h2 {
 	margin: 30px 0;
 	color: var(--primary-color);
+  height: 25vh;
 }
 
 .social a {
