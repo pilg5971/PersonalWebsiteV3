@@ -621,7 +621,7 @@ a.is-selected .dot{
   overflow: hidden;
   position: relative;
   max-width: 1024px;
-  background-color: var(--section-cream);
+  /* background-color: var(--section-cream); */
 }
 
 .slider::before, .slider::after {
