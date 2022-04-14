@@ -64,67 +64,6 @@ ul {
 /* ##################### */
 /*      Desktop Nav      */
 /* ##################### */
-#dot-nav{
-  position: fixed;
-  right: 34px;
-  z-index: 1;
-  top: 50%;
-  bottom: auto;
-  transform: translateY(-50%);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s,opacity .5s ease;
-}
-
-#dot-nav.active {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s,opacity .5s ease;
-}
-
-.dot-container{
-  text-align: right;
-}
-
-.dot-container a{
-  display: inline-block;
-  -webkit-backface-visibility: hidden;
-}
-
-a.is-selected .dot{
-  background-color: #00b7c7;
-}
-
-.dot{
-  position: relative;
-  top: 7px;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.25);
-  transition: transform .2s,background-color .5s;
-  transform-origin: 50% 50%;
-}
-
-#dot-nav a span{
-  float: right;
-  display: inline-block;
-  transform: scale(.6);
-}
-
-.dot-label{
-  position: relative;
-  top: 3px;
-  padding: 0.4em 0.5em;
-  color: #f2f2f2;
-  font-family: Gotham,Helvetica,Arial,sans-serif;
-  font-size: 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: transform .2s,opacity .2s;
-  transform-origin: 100% 50%;
-}
 
 /* ###################### */
 /*       Mobile Nav       */
@@ -263,7 +202,7 @@ a.is-selected .dot{
 .section {
   padding: 30px 50px;
 	text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: var(--primary-color);
  
   /* Temporary Divider */
